@@ -27,8 +27,10 @@ Method: POST
 Action: localhost:3000/user/login
 Data: {"email": "nineeshk@gmail.com", "password": "password"}
 Response: {"Bearer token":"0fn49PZLa4UlDpSaQoEmOwKm6Vwl0DX3"}
-** You have to use your Bearer token for further requests.
+
 ```
+**Note - From here on use your Bearer token for further requests.
+
 #### User - All (List all users) Access only for authorized user.
 ```
 Method: GET
