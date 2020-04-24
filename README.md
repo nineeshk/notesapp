@@ -1,5 +1,6 @@
 # notesapp
-A simple note adding service. This service is running on 3 node.js servers.
+A simple note adding service. This service is running on 3 node.js servers. 
+Authentication is happeneing via Bearer tokens.
 ## Installing via GitHub
 Just clone the repository in a common location or inside your project:
 ```
@@ -99,3 +100,13 @@ Authorization:
 	Token: 0fn49PZLa4UlDpSaQoEmOwKm6Vwl0DX3
 Response: {"Message": "Successfully logged out."}
 ```
+### Todo's
+```
+1. Handle unwanted urls for.eg. - 
+	Original - localhost:3000/notes/delete/1
+	Invalid - localhost:3000/notes/delete/1/1
+2. A logged in user can view, update and delete only his notes.
+3. Logged in user's - userprofile
+
+```
+
