@@ -1,6 +1,6 @@
 # notesapp
 A simple note adding service. This service is running on 3 node.js servers. 
-Authentication is happeneing via Bearer tokens.
+Authentication is happening via Bearer tokens.
 ## Technologies
 Node.js, Express.js, Mongoose ODM, MongoDB
 ## Installing via GitHub
@@ -8,7 +8,7 @@ Just clone the repository in a common location or inside your project:
 ```
 https://github.com/nineeshk/notesapp.git
 ```
-I have cloned to /var/www. Now change directory to notesapp
+I have cloned to my /var/www. Now changing directory to notesapp
 ```
 nineesh@ubuntu:cd /var/www/notesapp
 ```
