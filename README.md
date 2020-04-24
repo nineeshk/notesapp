@@ -24,7 +24,7 @@ nineesh@ubuntu:/var/www/notesapp$ node server.js
 
 nineesh@ubuntu:/var/www/notesapp$ node server1.js
 
-nineesh@ubuntu:/var/www/notesapp$ node server1.js
+nineesh@ubuntu:/var/www/notesapp$ node server2.js
 
 ```
 
