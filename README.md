@@ -16,7 +16,19 @@ Run npm install
 ```
 nineesh@ubuntu:/var/www/notesapp$ npm install`
 ```
-## Sample Postman requests
+Now run the 3 nodejs servers on separate terminals.
+
+```
+
+nineesh@ubuntu:/var/www/notesapp$ node server.js
+
+nineesh@ubuntu:/var/www/notesapp$ node server1.js
+
+nineesh@ubuntu:/var/www/notesapp$ node server1.js
+
+```
+
+# Sample Postman requests
 #### User - Signup
 ```
 Method: POST
