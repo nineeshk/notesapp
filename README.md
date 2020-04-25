@@ -3,6 +3,8 @@ A simple note adding service. This service is running on 3 node.js servers.
 Authentication is happening via Bearer tokens.
 ## Technologies
 Node.js, Express.js, Mongoose ODM, MongoDB
+## Tested OS
+Ubuntu 16.04
 ## Installing via GitHub
 Just clone the repository in a common location or inside your project:
 ```
