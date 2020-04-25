@@ -31,6 +31,7 @@ nineesh@ubuntu:/var/www/notesapp$ node server2.js
 # Sample Postman requests
 #### User - Signup
 ```
+Workflow: Client <-> server1 <-> server2
 Method: POST
 Action: localhost:3000/user/signup
 Data: {"email": "nineeshk@gmail.com", "password": "password", "firstname": "Nineesh", "lastname": "K", "address": "Varapuzha"}
@@ -38,6 +39,7 @@ Response: {"Message": "Successfully completed sign-up."}```
 ```
 #### User - Login
 ```
+Workflow: Client <-> server1 <-> server2
 Method: POST
 Action: localhost:3000/user/login
 Data: {"email": "nineeshk@gmail.com", "password": "password"}
@@ -48,6 +50,7 @@ Response: {"Bearer token":"0fn49PZLa4UlDpSaQoEmOwKm6Vwl0DX3"}
 
 #### User - All (List all users) Access only for authorized user.
 ```
+Workflow: Client <-> server1 <-> server2
 Method: GET
 Action: localhost:3000/user/all
 Data: 
@@ -58,6 +61,8 @@ Response: [{"firstname":"Nineesh","lastname":"K","address":"Varapuzha","_id":"5e
 ```
 #### Create - Note. Access only for authorized user.
 ```
+
+Workflow: Client <-> server1 <-> server2 <-> server3
 Method: POST
 Action: localhost:3000/notes/create
 Data: {"notetext" : "My first note."}
@@ -68,6 +73,8 @@ Response: {"message":"Note created"}
 ```
 #### Notes - All (List all notes) (One can see his and others notes) Access only for authorized user.
 ```
+
+Workflow: Client <-> server1 <-> server2 <-> server3
 Method: GET
 Action: localhost:3000/notes/all
 Data: 
@@ -78,6 +85,8 @@ Response: [{"notetext":"My first note.","user":{"email":"nineeshk@gmail.com","_i
 ```
 #### Note - Update (Anybody can update anybody's note) Access only for authorized user.
 ```
+
+Workflow: Client <-> server1 <-> server2 <-> server3
 Method: POST
 Action: localhost:3000/notes/update
 Data: {"id":"1", "notetext": "My first note. Still I made an update, just now."}
@@ -88,6 +97,8 @@ Response:{"message":"Note updated"}
 ```
 #### Notes - All (List all notes) Access only for authorized user.
 ```
+
+Workflow: Client <-> server1 <-> server2 <-> server3
 Method: GET
 Action: localhost:3000/notes/all
 Data: 
@@ -98,6 +109,8 @@ Response: [{"notetext":"My first note. Still I made an update, just now.","user"
 ```
 #### Note - Delete (Anybody can delete anybody's note) Access only for authorized user.
 ```
+
+Workflow: Client <-> server1 <-> server2 <-> server3
 Method: DELETE
 Action: localhost:3000/notes/delete/1
 Authorization: 
@@ -107,6 +120,8 @@ Response: {"Message":"Note deleted"}
 ```
 #### User - Logout. Access only for authorized user.
 ```
+
+Workflow: Client <-> server1 <-> server2
 Method: GET
 Action: localhost:3000/user/logout
 Authorization: 
